@@ -1,0 +1,42 @@
+body {
+	background-color:#F9F4ED;
+}
+
+h3 {
+	text-align:center;
+	text-decoration:underline;
+}
+
+.student {
+	display: block;
+	text-align:center;
+	background-color:#A7E8E9;
+	padding:4px;
+	margin:8px;
+	border-style:dotted;
+	
+}
+
+.question {
+	text-align:center;
+	border-style:dotted;
+	background-color:#C5F2CE;
+	padding:4px;
+	margin:8px;
+}
+
+.textarea {
+	text-align:center;
+	border-style:dotted;
+	background-color:#E9CEEC;
+	padding:4px;
+	margin:8px;
+}
+
+.dropdown {
+
+	text-align:center;
+	border-style:dotted;
+	background-color:#ECD4CE;
+	padding:4px;
+	margin:8px;
