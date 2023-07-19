@@ -1,0 +1,50 @@
+body {
+	background-color:#F9F4ED;
+}
+.header {	
+	color:black;
+	text-align:center;
+	background-color:beige;
+	border:2px solid gray;
+	padding:4px;
+	margin: 10px;
+}
+
+.center {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#greece {
+	width:400px;
+	align-self:center;
+}
+
+section {
+	width:100%;
+	text-align:center;
+}
+p {
+	color:grey;
+	background-color:#C3E2F0;
+	font-family: serif;
+	font-size: small;
+	font-variant: small-caps;
+	text-align: center;
+	border: 1px solid gray;
+	padding:4px;
+	margin:10px;
+	align-self:center;
+}
+a {
+	color:blue;
+	text-align:center;
+	font-size:14px;
+	padding:8px;
+	margin:8px;
+	border:1px solid gray;
+	background-color:#C3E2F0;
+	padding:4px;
+	margin:10px;
+}
