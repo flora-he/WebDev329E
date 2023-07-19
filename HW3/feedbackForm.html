@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>HOMEWORK 3</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Campus Visit Feedback Form">
+   <meta name="author" content="Flora He">
+</head> 
+
+<body>
+
+<form method = "POST">
+	<h3> Campus Visit Feedback Form </h3>		
+
+   <p>
+      <label> Student Name: <input name = "name" type = "text" size = "30" > </label>
+   </p>
+
+   <p>
+      <label> Street Address: <input name = "street" type = "text" size = "30" > </label>
+   </p>
+
+   <p>
+      <label> Email Address: <input name = "email" type = "text" size = "30" > </label>
+   </p>
+   <p>
+      <b>What did you like most about the campus?:</b><br>
+      <label> students <input name = "likes[]" type = "checkbox" value = "students" > </label>
+      <label> location <input name = "likes[]" type = "checkbox" value = "location" > </label>
+      <label> campus <input name = "likes[]" type = "checkbox" value = "campus" ></label>
+      <label> courses offered <input name = "likes[]" type = "checkbox" value = "courses"></label>
+      <label> housing <input name = "likes[]" type = "checkbox" value = "housing"></label>
+      <label> sports <input name = "likes[]" type = "checkbox" value = "sports">
+</label>
+   </p>
+
+   <p>
+   	<b>How did you become interested in the university?</b><br>
+	<label> Family <input name = "connection" type = "radio" value = "family"></label>
+	<label> Friends <input name = "connection" type = "radio" value = "friends"></label>	
+	<label> Television <input name = "connection" type = "radio" value = "television"></label>
+	<label> Internet <input name = "connection" type = "radio" value = "friends"></label>
+	<label> Other <input name = "connection" type = "radio" value = "friends"></label>
+	</p>
+
+
+   <p>
+      <label> Departments:
+         <select name = "department">
+             <option> Computer Science </option>
+	         <option> Biology </option>
+	         <option> Chemistry </option>
+	         <option> Russian Literature </option>
+	         <option> Social Work </option>
+	      </select>
+      </label>
+   </p>
+
+	<p>
+	<label> Any additional comments?<br>
+   <textarea name = "comments" rows = "4" cols = "36"> Enter comments here: </textarea>
+  </label>
+   <input type = "submit" value = "Enter">
+   <input type = "reset" value = "Reset">
+	
+	</p>
+
+</form>
+</body>
+</html>
