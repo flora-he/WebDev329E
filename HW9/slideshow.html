@@ -1,173 +1,99 @@
-<!DOCTYPE html>
+Last login: Wed Mar  8 23:23:43 on ttys000
+florahe@MacBook-Pro-19 ~ % ssh flora@plato.cs.utexas.edu
+Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.4.0-137-generic x86_64)
 
-<html lang="en">
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+ * UTCS FAQ: http://www.cs.utexas.edu/facilities/faq/
+ * Report software problems to help@cs.utexas.edu
+  System information as of Thu 09 Mar 2023 09:00:28 AM CST
+
+  System load:  0.0                Temperature:                29.8 C
+  Usage of /:   44.5% of 46.63GB   Processes:                  336
+  Memory usage: 13%                Users logged in:            1
+  Swap usage:   0%                 IPv4 address for enp0s31f6: 128.83.130.90
+
+This network and computing environment (including this system) is
+owned and managed by the UT Austin Department of Computer Science,
+and intended for instructional, research, and administrative use by
+authorized users only.  By using this system, all users acknowledge
+notice of, and agree to comply with, the UT Austin Acceptable Use
+Policy (https://security.utexas.edu/policies/aup).  Unauthorized,
+improper, or negligent use of this environment may result in
+administrative disciplinary action, civil charges/criminal
+penalties, and/or other sanctions as set forth in University or
+Department policies.
+
+Last login: Thu Mar  9 08:59:20 2023 from 66.112.241.237
+plato$ cd /projects/coursework/2023-spring/cs329e-bulko/flora
+plato$ cd HW9
+plato$ vi changePicture.js 
+plato$ vi changePicture.js 
+
+
+
+
+
+
+
+
+
+plato$ vi slideshow.html 
+
 
 <head>
    <title>Slideshow</title>
    <meta charset="UTF-8">
    <meta name="description" content="Shows a slideshow using JS">
    <meta name="author" content="Flora He">
-	<link href="HW9.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
-	
-	<script>
+        <link href="HW9.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+        
+        <script>
 
-	$(document).ready(function() {
-	
-	//	slideshow = (function() {
-	//		counter = 0,
-	//		slides = $("#imageDiv .img");
-		
-		img_src = new Array ("agra", "ajanta", "akshardham", "gateway", "hawa", "mehrangarh", "mysore","qutub", "sun", "taj", "victoria")
-	//	img_id=$("#imageDiv .img")
-	
-	//	$('imageDiv').each(function() {
-			
-		var i=0
-		var flag = true
-		
-		var handle = setInterval(function() {
-			
-			if (flag) {
-			id = "#"+img_src[i]
-			$(id).css("marginLeft", "0")
-			$(id).animate({marginLeft: '+=2200'}, 3000)	
-			i++
-			if (i>img_src.length-1) i=0;
-			}
-		}, 3000)
-		
+        $(document).ready(function() {
+//              $("#agra").animate({marginLeft: '+=200'}, 3000) 
 
-		$("#buttonStart").click(function() {
-			$(id).animate({marginLeft: '+=2200'},3000)
-		//	i++
-			flag = true
-		/*			
-		var handle = setInterval(function() {
-			
-			id = "#"+img_src[i]
-			$(id).css("marginLeft", "0")
-			$(id).animate({marginLeft: '+=2200'}, 3000)	
-			i++
-			if (i>img_src.length-1) i=0;
-		}, 3000)*/
-		})
-		$("#buttonEnd").click(function() {
-			$(id).stop(true)
-		//	clearInterval(handle)
-			flag = false
-		})
-
-	
-/*
-		for (let i =0; i< img_src.length; i++) {
-			id = "#"+img_src[i]
-			$(id).animate({marginLeft: '+=200'}, 3000)	
-			(function() {console.log('hello');}, 3000)
-		}
-		*/
-	//	$("#buttonStart").click(function() {
-		//	$("h1").toggle()	
-//		})
-		//
-	//	$("#buttonEnd").stop(stopAll)
+        //      $("#buttonStart").click(function($("#agra").animate({"margin-left": '+=200'},3000)))
+                $("#buttonStart").click(function() {
+                        $("h1").toggle()        
+                })
+                //
+//              $("#buttonEnd").stop(stopAll)
 
 
 
-})
+        })
 
 
-	</script>
+        </script>
 
-	
-</head> 
+        
+</head>
 
 <body>
-	<form>
-	<h1>Travel Show</h1>
-	<div id="imageDiv">
-		<div class="divStyle" id="agra"> 
-		<img class="img" src="agra_fort.jpeg" width="640" height="480">
-		</div>
-		<div class="divStyle" id="ajanta">
-		<img class="img" src="ajanta_ellora.jpeg" width="640" height="480">
-		</div>
-		<div class="divStyle" id="akshardham">
-		<img class="img" src="akshardham_temple.jpeg" width="640" height="480">
-		</div>
-		<div class="divStyle" id="gateway">
-		<img class="img"  src="gateway_of_india.jpeg" width="640" height="480">
-		</div>
-		<div class="divStyle" id="hawa">
-		<img class="img" src="hawa_mahal.jpeg" width="640" height="480">
-		</div>
-		<div class="divStyle" id="mehrangarh">
-		<img class="img" src="mehrangarh_fort.jpeg" width="640" height="480">
-		</div>
-		<div class="divStyle" id="mysore">
-		<img class="img" src="mysore_palace.jpeg" width="640" height="480">
-		</div>
-		<div class="divStyle" id="qutub">
-		<img class="img" src="qutub_minar.jpeg" width="640" height="480">
-		</div>
-		<div class="divStyle" id="sun">
-		<img class="img" src="sun_temple.jpeg" width="640" height="480">
-		</div>
-		<div class="divStyle" id="taj">
-		<img class="img" src="taj_mahal.jpeg" width="640" height="480">
-		</div>
-		<div class="divStyle" id="victoria">
-		<img class="img" src="victoria_memorial.jpeg" width="640" height="480">
-		</div>
-	</div>
-	<div id="buttons">
-		<p>
-			<br />
-			<input id="buttonStart" type="button" value="Start"/>
-			<input id="buttonEnd" type="button" value="End"/>
-
-		</p>
-
-	</div>
-	</form>
-
-<!--
-	<script>
-		
-	top_img = "agra"
-	img_src = new Array ("agra", "ajanta", "akshardham", "gateway", "hawa", "mehrangarh", "mysore","qutub", "sun", "taj", "victoria")
-	console.log("img_src:"+img_src)
-	index=0
-	//slideLayer = document.getElementById(top_img)
-
-	function startChangeImage() {
-		changeImage(index, 0)
-		console.log(index)
-		setInterval(startChangeImage, 3000);
-		index++
-		index=index%img_src.length
-	}
-	function changeImage(index2, freq) {
-		if(freq < 150) {
-		slideLayer = document.getElementById(img_src[index2]);
-		// confused with what parseInt does? and left?
-	
-		layerPosition = parseInt(window.getComputedStyle(slideLayer).left);
-		// start_img = img_src[1]
-		slideLayer.style.left = (layerPosition + 5) + "px";
-		setTimeout("changeImage()", 20, index2, freq+1);
-		}
-		//myInterval = 
-	}
-
-
-	function stopFunction() {
-		clearInterval(myInterval);
-	}
-
-
-
-
-	</script> -->
-</body>
-</html>
+        <form>
+        <h1>Travel Show</h1>
+        <h2>Test</h2>
+        <div id="imageDiv">
+                <div class="divStyle" id="agra">
+                <img class="img" src="agra_fort.jpeg" width="640" height="480">
+                </div>
+                <div class="divStyle" id="ajanta">
+                <img class="img" src="ajanta_ellora.jpeg" width="640" height="480">
+                </div>
+                <div class="divStyle" id="akshardham">
+                <img class="img" src="akshardham_temple.jpeg" width="640" height="480">
+                </div>
+                <div class="divStyle" id="gateway">
+                <img class="img"  src="gateway_of_india.jpeg" width="640" height="480">
+                </div>
+                <div class="divStyle" id="hawa">
+                <img class="img" src="hawa_mahal.jpeg" width="640" height="480">
+                </div>
+                <div class="divStyle" id="mehrangarh">
+                <img class="img" src="mehrangarh_fort.jpeg" width="640" height="480">
+                </div>
+                <div class="divStyle" id="mysore">
+"slideshow.html" 124L, 3095C written                                                                                         28,0-1         4%
