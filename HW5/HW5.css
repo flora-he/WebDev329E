@@ -1,0 +1,140 @@
+#container {
+	width: 90%;
+	margin: 10px auto;
+	background-color: beige;
+	color: #333;
+	border: 1px dashed gray;
+	line-height: 130%;
+}
+
+#top {
+	padding: .5em;
+	background-color: #F7B8A8;
+	border-bottom: 1px dashed gray;
+}
+
+#top h3 {
+	padding: 0;
+	margin: 0;
+}
+
+
+#leftnav a {
+        color: black;
+        text-align:center;
+        padding: 15px;
+        font-size: 20px;
+	display: block;
+	border: 1px solid black;
+	background-color: #F7B8A8;
+}
+
+#leftnav {
+	float: left;
+	width: 190px;
+	margin: 0;
+	padding: 1em;
+	border-right: 1px solid gray;
+	padding-bottom: 0;
+}
+
+#rightnav {
+	float: right;
+	width: 190px;
+	margin: 0;
+	padding: 1em;
+}
+
+#content {
+	margin-left: auto;
+	border-left: 1px dotted gray;
+	margin-right: auto;
+	border-right: 1px dotted gray;
+	padding: 2em;
+}
+
+#centralTop {
+	background-color: purple;
+
+}
+
+#centralBottom {
+	padding: 30px 10px 10px 10px;
+	margin: 600px 10px 10px 10px;
+	border-top: 2px dotted black;
+}
+
+#centralBottom h2 {
+	background-color:#F7B8A8;
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid #F7B8A8;
+	display: block;
+	width: 80%;
+}
+
+#centralBottom h3 {
+	text-indent: 1em;
+	color: #3A86D1;
+}
+
+#centralBottom h4 {
+	text-indent: 2em;
+}
+
+#centralBottom p {
+	padding-left: 50px;
+}
+
+#centralLeft {
+	float: left;
+	width: 28%;
+	height: 515px;
+	background-color: #8B605B;
+	padding: 2em;
+	margin: 10px;
+
+}
+
+#centralLeft h2 {
+	font-family: serif;
+	font-size: 36pt;
+	color: #F7B8A8;
+	text-align: center;
+	line-height: 1.5;
+}
+
+#centralLeft h3 {
+	font-family: fangsong;
+	font-size: 24pt;
+	line-height: 1.5;
+	color: #F7B8A8;
+	text-align: center;
+}
+
+#centralRight {
+	float: right;
+	width: 32%;
+}
+
+#footer {
+	clear: both;
+	margin: 0;
+	padding: .5em;
+	border-top: 1px dotted gray;
+	background-color: #F6E5E0;
+}
+
+.midImg {
+	max-width: 100%;
+	height: auto;
+}
+
+.rightImg {
+	max-width: 100%;
+	height: auto;
+}
+
+
+#leftnav p, #rightnav p { margin: 0 0 1em 0; }
+#content h2 { margin: 0 0 .5em 0; }
