@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>Slideshow</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Shows a slideshow using JS">
+   <meta name="author" content="Flora He">
+	<link href="HW9.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+	
+	<script>
+
+	$(document).ready(function() {
+	
+	//	slideshow = (function() {
+	//		counter = 0,
+	//		slides = $("#imageDiv .img");
+		
+		img_src = new Array ("agra", "ajanta", "akshardham", "gateway", "hawa", "mehrangarh", "mysore","qutub", "sun", "taj", "victoria")
+	//	img_id=$("#imageDiv .img")
+	
+	//	$('imageDiv').each(function() {
+			
+		var i=0
+		var flag = true
+		
+		var handle = setInterval(function() {
+			
+			if (flag) {
+			id = "#"+img_src[i]
+			$(id).css("marginLeft", "0")
+			$(id).animate({marginLeft: '+=2200'}, 3000)	
+			i++
+			if (i>img_src.length-1) i=0;
+			}
+		}, 3000)
+		
+
+		$("#buttonStart").click(function() {
+			$(id).animate({marginLeft: '+=2200'},3000)
+		//	i++
+			flag = true
+		/*			
+		var handle = setInterval(function() {
+			
+			id = "#"+img_src[i]
+			$(id).css("marginLeft", "0")
+			$(id).animate({marginLeft: '+=2200'}, 3000)	
+			i++
+			if (i>img_src.length-1) i=0;
+		}, 3000)*/
+		})
+		$("#buttonEnd").click(function() {
+			$(id).stop(true)
+		//	clearInterval(handle)
+			flag = false
+		})
+
+	
+/*
+		for (let i =0; i< img_src.length; i++) {
+			id = "#"+img_src[i]
+			$(id).animate({marginLeft: '+=200'}, 3000)	
+			(function() {console.log('hello');}, 3000)
+		}
+		*/
+	//	$("#buttonStart").click(function() {
+		//	$("h1").toggle()	
+//		})
+		//
+	//	$("#buttonEnd").stop(stopAll)
+
+
+
+})
+
+
+	</script>
+
+	
+</head> 
+
+<body>
+	<form>
+	<h1>Travel Show</h1>
+	<div id="imageDiv">
+		<div class="divStyle" id="agra"> 
+		<img class="img" src="agra_fort.jpeg" width="640" height="480">
+		</div>
+		<div class="divStyle" id="ajanta">
+		<img class="img" src="ajanta_ellora.jpeg" width="640" height="480">
+		</div>
+		<div class="divStyle" id="akshardham">
+		<img class="img" src="akshardham_temple.jpeg" width="640" height="480">
+		</div>
+		<div class="divStyle" id="gateway">
+		<img class="img"  src="gateway_of_india.jpeg" width="640" height="480">
+		</div>
+		<div class="divStyle" id="hawa">
+		<img class="img" src="hawa_mahal.jpeg" width="640" height="480">
+		</div>
+		<div class="divStyle" id="mehrangarh">
+		<img class="img" src="mehrangarh_fort.jpeg" width="640" height="480">
+		</div>
+		<div class="divStyle" id="mysore">
+		<img class="img" src="mysore_palace.jpeg" width="640" height="480">
+		</div>
+		<div class="divStyle" id="qutub">
+		<img class="img" src="qutub_minar.jpeg" width="640" height="480">
+		</div>
+		<div class="divStyle" id="sun">
+		<img class="img" src="sun_temple.jpeg" width="640" height="480">
+		</div>
+		<div class="divStyle" id="taj">
+		<img class="img" src="taj_mahal.jpeg" width="640" height="480">
+		</div>
+		<div class="divStyle" id="victoria">
+		<img class="img" src="victoria_memorial.jpeg" width="640" height="480">
+		</div>
+	</div>
+	<div id="buttons">
+		<p>
+			<br />
+			<input id="buttonStart" type="button" value="Start"/>
+			<input id="buttonEnd" type="button" value="End"/>
+
+		</p>
+
+	</div>
+	</form>
+
+<!--
+	<script>
+		
+	top_img = "agra"
+	img_src = new Array ("agra", "ajanta", "akshardham", "gateway", "hawa", "mehrangarh", "mysore","qutub", "sun", "taj", "victoria")
+	console.log("img_src:"+img_src)
+	index=0
+	//slideLayer = document.getElementById(top_img)
+
+	function startChangeImage() {
+		changeImage(index, 0)
+		console.log(index)
+		setInterval(startChangeImage, 3000);
+		index++
+		index=index%img_src.length
+	}
+	function changeImage(index2, freq) {
+		if(freq < 150) {
+		slideLayer = document.getElementById(img_src[index2]);
+		// confused with what parseInt does? and left?
+	
+		layerPosition = parseInt(window.getComputedStyle(slideLayer).left);
+		// start_img = img_src[1]
+		slideLayer.style.left = (layerPosition + 5) + "px";
+		setTimeout("changeImage()", 20, index2, freq+1);
+		}
+		//myInterval = 
+	}
+
+
+	function stopFunction() {
+		clearInterval(myInterval);
+	}
+
+
+
+
+	</script> -->
+</body>
+</html>
