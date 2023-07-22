@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>RANDOM IMAGES</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="ENTER DESCRIPTION HERE">
+   <meta name="author" content="ENTER NAME HERE">
+	<script type = "text/javascript" src = "changeImage.js"></script> 
+	<link href = "HW8.css" rel="stylesheet">
+</head> 
+
+<body onload = "changeImg()">
+
+	<h1> Galaxies </h1>
+	<div class="item">
+		<img class = "img" id = "specks" src = "GalaxyCluster.jpeg" 
+		     alt = "Picture of Galaxy" width = "640" height = "480"> 
+		<img class = "img" id = "ring" src = "M104.jpeg" 
+		     alt = "Picture of Galaxy" width = "640" height = "480"> 
+		<img class = "img" id = "arms" src = "NGC1300.jpeg" 
+		     alt = "Picture of Galaxy" width = "640" height = "480"> 
+		<img class = "img" id = "swirl" src = "InteractingGalaxies.jpeg" 
+		     alt = "Picture of Galaxy" width = "640" height = "480"> 
+		<img class = "img" id = "raspberry" src = "M51.jpeg" 
+		     alt = "Picture of Galaxy" width = "640" height = "480"> 
+		<img class = "img" id = "cloud" src = "NGC6217.jpeg" 
+		     alt = "Picture of Galaxy" width = "640" height = "480"> 
+	<br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br>
+	<p id="caption">Galaxy Cluster</p>
+	</div>
+	<script>
+		top_img = "specks"
+		img_src = new Array ("specks", "ring", "arms", "swirl", "raspberry", "cloud")
+		text_array = new Array ("Galaxy Cluster", "M 104", "NGC 1300", "Interacting Galaxies", "M 51", "NGC 6217")
+		function get_img() {
+			rnd_idx = Math.trunc (Math.random() * img_src.length)
+			return img_src[rnd_idx]
+		}
+		
+		function get_text() {
+			return text_array[rnd_idx]
+		}
+		function changeImg() {
+			//
+			new_img = get_img()
+			styleTop = document.getElementById(top_img).style
+			styleNew = document.getElementById(new_img).style
+			
+			// change the image
+			styleTop.zIndex = "0"
+			styleNew.zIndex = "10"
+			top_img = new_img
+
+			//find matching caption
+			caption = get_text()
+			document.getElementById("caption").innerHTML = caption
+		}
+	</script>
+</body>
+</html>
