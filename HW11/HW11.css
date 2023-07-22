@@ -1,0 +1,33 @@
+#puzzle1 {
+	display: none;
+	margin: 2em;
+}
+
+#puzzle2 {
+	display: none;
+	margin: 2em;
+}
+
+#puzzle3 {
+	display: none;
+	margin: 2em;
+}
+
+.puzzleback {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 300px;
+}
+
+body {
+	background-color: #E3B3AF;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	margin-left:auto;
+	margin-right: auto;
+}
