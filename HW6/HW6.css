@@ -1,0 +1,43 @@
+h1 {
+	text-align: center;
+}
+
+h4 {
+	color: white;
+	background-color: #6FACE7;
+	padding: 4px;
+	margin: 4px;
+	border: 1px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.input {
+	background-color: #D6EBA4;
+	padding: 1em;
+	margin: 1em;
+	border: round;
+	width: 400px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#calcButton, #resetButton {
+	display: inline-block;
+}
+
+.buttons {
+	text-align: center;
+}
+	
+
+.buttons {
+	text-align: center;
+}
+
+.output {
+	text-align: center;
+}
