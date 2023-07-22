@@ -1,0 +1,52 @@
+#specks {
+	z-index: 0;
+}
+
+#ring {
+	z-index: 0;
+}
+#arms {
+	z-index: 0;
+}
+#swirl {
+	z-index: 0;
+}
+#raspberry {
+	z-index: 0;
+}
+#cloud {
+	z-index: 0;
+}
+
+div.item {
+	vertical-align: top;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 100px 10px 10px 10px;
+	background-color: #EA9C96;
+	width: 700px;
+	height 600px;
+}
+
+#caption {
+	font-size: 32px; 
+	text-align: center;
+        display: block;
+}
+
+.img {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 640px;
+	height: 480px;
+}
+
+
+h1 {
+	font-variant: small-caps;
+	text-align: center;
+	font-size: 48px;
+}
