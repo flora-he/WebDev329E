@@ -1,0 +1,12 @@
+CREATE TABLE passwords (
+   username          VARCHAR(20),
+   pwd               VARCHAR(20)
+);
+
+
+INSERT INTO passwords (username, pwd) VALUES
+   ("flora", "h420"),
+   ("Brian", "bwan");
+  
+
+DELETE * FROM students;
